@@ -1,0 +1,39 @@
+<!--- iPhone 滚动条不显示但可以滚动优化，android没这个问题
+伪元素 ::-webkit-scrollbar {display: none}
+-webkit-overflow-scrolling: touch
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/mystyle.css">
+    <title>h5demo2</title>
+    <style>
+      #content::-webkit-scrollbar {display: none}
+    </style>
+  </head>
+  <body style="margin:0; padding:0; width: 100vw; height:100vh; display: flex; flex-direction: column; flex-wrap: nowrap;">
+    <div id="header"  style="flex-basis: 2rem; background-color: chartreuse; ">55555yyy</div>
+    <div id="content" style="flex-basis: 2rem; flex-grow: 1; background-color: brown; overflow-y: auto; -webkit-overflow-scrolling: touch">
+      <img src="logo.png"/>
+      <img src="logo.png"/>
+      <img src="logo.png"/>
+      <img src="logo.png"/>
+      <img src="logo.png"/>
+      <img src="logo.png"/>
+      <img src="logo.png"/>
+    </div>
+    <div id="footer"  style="flex-basis: 2rem; background-color: blue ">foot</div>
+  </body>
+  <script>
+    var msg = navigator.userAgent + " @@ " + window.devicePixelRatio;
+    var vsize = document.documentElement.clientWidth;
+    var wsize = window.innerWidth;
+    console.log(vsize  + " &&& "+ wsize );
+
+  </script>
+</html>
