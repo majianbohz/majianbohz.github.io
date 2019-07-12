@@ -17,10 +17,10 @@
     </style>
   </head>
   <body style="margin:0; padding:0; width: 100vw; height:100vh; display: flex; flex-direction: column; flex-wrap: nowrap;">
-    <div id="header"  style="flex-basis: 2rem; background-color: chartreuse; ">
+    <div id="header"  style="flex-basis: 2vw; background-color: chartreuse; ">
       <a href="login.html">登录</a>
     </div>
-    <div id="content" style="flex-basis: 2rem; flex-grow: 1; background-color: brown; overflow-y: auto; -webkit-overflow-scrolling: touch">
+    <div id="content" style="flex-basis: 2vw; flex-grow: 1; background-color: brown; overflow-y: auto; -webkit-overflow-scrolling: touch">
       <img src="../img/logo.png"/>
       <img src="../img/logo.png"/>
       <img src="../img/logo.png"/>
@@ -29,11 +29,11 @@
       <img src="../img/logo.png"/>
       <img src="../img/logo.png"/>
     </div>
-    <div id="footer"  style="flex-basis: 2rem; background-color: blue ">foot</div>
+    <div id="footer"  style="flex-basis: 2vw; background-color: blue ">foot</div>
   </body>
   <script>
     var msg = navigator.userAgent + " @@ " + window.devicePixelRatio;
-    var vsize = document.documentElement.clientWidth;
+    var vsize = document.body.getAttributeNames();
     var wsize = window.innerWidth;
     console.log(vsize  + " &&& "+ wsize );
   </script>
