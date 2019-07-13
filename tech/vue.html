@@ -17,5 +17,45 @@
 
 <a  href="https://www.cnblogs.com/jennydtt/p/10277493.html"> template 嵌套 </a>
 
+<hr/>
+<p> VUE 组件 示例</p>
+<textarea>
+  <template>
+
+  </template>
+
+  <script>
+
+  export default {
+      name: 'HelloWorld',
+
+      data: function () {
+          return {
+              sheetVisible: true,
+              actions: [{name: '11', method: null}, {name: '22', method: null}]
+          }
+      },
+
+      props: {
+          msg: String
+      },
+
+      computed: {
+          age () {
+              return this.$store.state.age + 2;
+          }
+      },
+
+      methods: {
+          handleClick() {
+              this.$store.dispatch('plus10age');
+              this.$toast('Hello world!');
+          }
+      }
+  }
+  </script>
+
+</textarea>
+
 </body>
 </html>
