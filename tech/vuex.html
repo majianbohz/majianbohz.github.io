@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+export default new Vuex.Store({
+  state: {
+    age: 18
+  },
+
+  /* commit mutation, update state value sychronize */
+  mutations: {
+    plus10age (state) {
+      state.age = state.age + 10;
+    }
+  },
+
+  /* dispatch action, update state value asychronize */
+  actions: {
+    plus10age (context) {
+      context.commit('plus10age');
+    }
+  }
+})
+
+</body>
+</html>
