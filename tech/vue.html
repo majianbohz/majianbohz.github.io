@@ -19,7 +19,11 @@
 <a  href="https://www.cnblogs.com/jennydtt/p/10277493.html"> template 嵌套 </a>
 
 <hr/>
+
+<a href="https://cn.vuejs.org/v2/guide/components-props.html"> vue 官网 </a>
+
 <p> VUE 组件 示例</p>
+
 <textarea style="width: 400px; height: 460px; resize: none">
   <template>
      {{sheetVisible}}  {{msg}} {{age}}
@@ -38,7 +42,8 @@
       },
 
       props: {
-          msg: String
+          msg: String,
+          author: Object
       },
 
       computed: {
@@ -77,6 +82,17 @@ export default new Vuex.Store({
     }
   }
 })
+</textarea>
+<textarea style="width: 400px; height: 460px; resize: none">
+  type 可以是下列原生构造函数中的一个：
+  String
+  Number
+  Boolean
+  Array
+  Object
+  Date
+  Function
+  Symbol
 </textarea>
 
 </body>
