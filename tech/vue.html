@@ -30,6 +30,7 @@
   </template>
 
   <script>
+  import { mapGetters } from 'vuex'
 
   export default {
       name: 'HelloWorld',
@@ -47,9 +48,15 @@
       },
 
       computed: {
-          age () {
-              return this.$store.state.age + 2;
-          }
+
+        ...mapGetters([
+          'age2'
+          // ...
+        ]),
+
+        age () {
+            return this.$store.state.age + 2;
+        }
       },
 
       methods: {
