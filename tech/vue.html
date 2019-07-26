@@ -68,6 +68,11 @@ export default new Vuex.Store({
     age: 18
   },
 
+  // store 的计算属性
+  getters: {
+    age2: state => state.age +2
+  }
+
   /* commit mutation, update state value sychronize */
   mutations: {
     plus10age (state) {
